@@ -1,0 +1,4 @@
+interface:
+  display_name: "Robinhood Chain"
+  short_description: "Build on Robinhood Chain with live docs"
+  default_prompt: "Use $robinhood-chain to configure, deploy, or research Robinhood Chain integrations."
