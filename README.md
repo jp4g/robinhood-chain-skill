@@ -16,6 +16,21 @@ For Codex project installs, the `skills` CLI targets `.agents/skills/`. For Clau
 npx skills add jp4g/robinhood-chain-skill --skill robinhood-chain --agent claude-code
 ```
 
+## Skills.sh Discoverability
+
+There is no separate skills.sh publish command. Public GitHub repositories are installable through the `skills` CLI, and skills.sh can discover them from CLI usage. The canonical install target is:
+
+```bash
+npx skills add jp4g/robinhood-chain-skill --skill robinhood-chain
+```
+
+Manual install locations:
+
+- Claude Code personal: `~/.claude/skills/robinhood-chain/`
+- Claude Code project: `.claude/skills/robinhood-chain/`
+- Codex personal: `~/.codex/skills/robinhood-chain/`
+- Codex/project-compatible: `.agents/skills/robinhood-chain/`
+
 ## Upload To Claude.ai Or Claude API
 
 Do not upload the GitHub repository ZIP directly. Claude custom Skills expect a ZIP whose single top-level entry is the skill folder containing `SKILL.md`.
@@ -40,6 +55,14 @@ robinhood-chain.zip
 ## Skill
 
 - `skills/robinhood-chain/`
+
+## Smoke Prompts
+
+Try these in a fresh agent session after installing:
+
+- "Use the Robinhood Chain skill to configure wagmi/viem for Robinhood Chain Testnet."
+- "Use the Robinhood Chain skill to plan a Stock Token price card for AAPL."
+- "Use the Robinhood Chain skill to check whether Goldsky, Allium, or another named service supports Robinhood Chain."
 
 ## Notes
 
